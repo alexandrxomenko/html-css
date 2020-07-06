@@ -1,0 +1,138 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 80px;
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideInY 1s;
+    z-index: 50;
+}
+
+@keyframes slideInY {
+    from {top: -80px;}
+    to{top: 0;}
+}
+.logo {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 20px;
+
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e7e7e7;
+}
+.large:hover {
+    background-color: #1f1675;
+}
+.bells {
+    background-image: url("https://drive.google.com/uc?export=download&id=1QJqmsdllmIMamTu-myGz8DMF63L46o2L");
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bells:hover {
+    background-image: url("https://drive.google.com/uc?export=download&id=1jj0c2IBYewGqx884Dj3F8n9j2swsGQgg");
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    background-color: #ffa51c;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar:hover {
+    background-color: #c77c1b;
+}
+
+.avatar input {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input.letter {
+
+}
+
+input:checked + .popup {
+    animation: fadeIn 300ms;
+    animation-fill-mode: forwards;
+}
+
+.popup {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    -webkit-box-shadow: -5px 14px 37px 4px rgba(48, 6, 48, 0.7);
+    -moz-box-shadow: -5px 14px 37px 4px rgba(48, 6, 48, 0.7);
+    box-shadow: -5px 14px 37px 4px rgba(48, 6, 48, 0.7);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+        visibility: hidden;
+    }
+    to {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+hr {
+    border: none;
+    background-color: #d3d3d3;
+    height: 2px;
+    margin-right: 20px;
+
+}
