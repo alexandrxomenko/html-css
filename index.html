@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
@@ -13,7 +14,7 @@
         <img src="https://d3ot0t2g92r1ra.cloudfront.net/img/logo@3x_optimized.svg">
     </div>
     <div class="navbar">
-        <div class="bells"></div>
+        <i class="fa fa-bell" aria-hidden="true"></i>
         <div class="avatar">
             <span class="letter">A</span>
             <input type="checkbox">
@@ -38,21 +39,35 @@
     <div class="container">
         <div class="item-left">
             <div class="items">
-                <div class="background-ac"></div>
-            </div>
-            <div class="items">
-                <div class="flipper">
-                    <div class="js-front">JS</div>
-                    <div class="js-back">An online intensive course on
-                        building web applications with JAvaScript</div>
-                </div>
-            </div>
-            <div class="items">
-                <div class="front-qa">
-                    <div class="qa-text">
-                        QA
+                <div class="flipper-ac">
+                    <div class="front-ac"></div>
+                    <div class="back-ac">
+                        <button class="btn-join">JOIN</button>
                     </div>
                 </div>
+
+            </div>
+            <div class="items">
+                <div class="flipper-js">
+                    <div class="js-front">
+                        <div class="js-text">JS</div>
+                    </div>
+                    <div class="js-back">An online intensive course on
+                        building web applications with JavaScript</div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="flipper-qa">
+                    <div class="front-qa">
+                        <div class="qa-text">
+                            QA
+                        </div>
+                    </div>
+                    <div class="back-qa">
+                        Advanced online course focusing on the finer points of QA
+                    </div>
+                </div>
+
             </div>
             <div class="items">
                 <div class="front-java">
@@ -65,20 +80,59 @@
         </div>
         <div class="item-right">
             <div class="items">
-                <div class="front-php">php</div>
+                <div class="front-php">
+                    <div class="php-text">
+                        php
+                    </div>
+                </div>
+                <div class="back-php">An online intensive course on building
+                    web applications with PHP
+                </div>
             </div>
             <div class="items">
-                <div class="front-net">.NET</div>
+                <div class="front-net">
+                    <div class="net-text">
+                        .NET
+                    </div>
+                </div>
+                <div class="back-net">
+                    An online intensive course on building
+                    web applications with .NET
+                </div>
             </div>
             <div class="items">
-                <div class="front-events">Events</div>
+                <div class="front-events">
+                    <div class="events-text">
+                        Events
+                    </div>
+                </div>
+                <div class="back-events">
+                    У березні-квітні відбулася серія наших онлайн трансляцій по веб-розробці під кодовою назвою
+                    Homeference. Ми на деякий час залишимо посилання на запис трансляцій нижче. Дивись, шарь з друзями,
+                    а щоб не пропустити майбутні події - підписуйся на <a href="#">телеграм Binary Studio Academy.</a>
+                </div>
             </div>
             <div class="items">
-                <div class="front-blog">Blog</div>
+                <div class="front-blog">
+                   <div class="blog-text">Blog</div>
+                </div>
+                <div class="back-blog">
+                    Ділимося інсайтами Академії, досвідом створення world-class проектів та роздумами про життя,
+                    код, роботу.
+                </div>
 
             </div>
             <div class="items">
-                <div class="front-contacts">Contacts</div>
+                <div class="front-contacts">
+                    <div class="contacts-text">
+                        Contacts
+                    </div>
+                </div>
+                <div class="back-contacts">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
 
             </div>
         </div>
@@ -87,6 +141,17 @@
 <div class="footer">
     <div class="copyright">
         &copy Powered by Binary Studio Team
+    </div>
+</div>
+<div class="notifications">
+    <div class="notice-error">
+        <div class="error-icon">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        </div>
+        <div class="error-message">
+            <h4>Error</h4>
+            <p>Something went wrong. Please try again later.</p>
+        </div>
     </div>
 </div>
 </body>

@@ -34,15 +34,20 @@
 .menu {
     list-style-type: none;
     padding-left: 20px;
-
+}
+.menu li:nth-child(1){
+    font-size: 1.2em;
+    text-align: center;
+    color: #a0a0a0;
 }
 
 .button {
     background-color: white;
+    width: 80%;
     border: none;
     color: black;
     padding: 5px 10px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -57,17 +62,13 @@
 .large:hover {
     background-color: #1f1675;
 }
-.bells {
-    background-image: url("https://drive.google.com/uc?export=download&id=1QJqmsdllmIMamTu-myGz8DMF63L46o2L");
-    height: 30px;
-    width: 30px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.bells:hover {
-    background-image: url("https://drive.google.com/uc?export=download&id=1jj0c2IBYewGqx884Dj3F8n9j2swsGQgg");
+.fa-bell{
+    color: #a0a0a0;
+    font-size: 2em;
+}
+.fa-bell:hover {
+    color: #5a5a5a;
 }
 
 .avatar {
@@ -94,8 +95,10 @@
     cursor: pointer;
 }
 
-input.letter {
-
+.letter {
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
 }
 
 input:checked + .popup {
@@ -108,7 +111,7 @@ input:checked + .popup {
     right: 50px;
     top: 70px;
     height: 150px;
-    width: 200px;
+    width: 250px;
     background-color: white;
     opacity: 0;
     visibility: hidden;
